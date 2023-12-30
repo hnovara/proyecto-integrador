@@ -1,0 +1,12 @@
+.footer-container {
+    align-items: center;
+    border-top: 0.25rem solid $primary-color;
+    display: flex;
+    justify-content: center;
+    min-height: 1rem;
+    padding: 0.25rem 2rem;
+    width: 100%;
+    p {
+        font-size: 1rem;
+    }
+}
