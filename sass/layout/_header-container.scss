@@ -1,0 +1,33 @@
+.header-container {
+    align-items: center;
+    background-color: $primary-color;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    min-height: 62px;
+    position: fixed;
+    padding: 8px;
+    top: 0;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+nav ul li {
+    margin: 0 16px;
+}
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(2, 87, 140);
+    font-size: 1.75rem;
+    text-decoration: underline;
+    cursor: pointer;
+}

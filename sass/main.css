@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel&display=swap");
+/* https://coolors.co/02111b-577399-bdd5ea-f7f7ff-fe5f55 */
+/*Colors*/
+/*Font sizes*/
+.bg-primary {
+  background-color: #02111B;
+}
+
+.color-primary {
+  color: #02111B;
+}
+
+.border-primary {
+  border: 1px solid #02111B;
+}
+
+.bg-secondary {
+  background-color: #BDD5EA;
+}
+
+.color-secondary {
+  color: #BDD5EA;
+}
+
+.border-secondary {
+  border: 1px solid #BDD5EA;
+}
+
+.bg-error {
+  background-color: #FE5F55;
+}
+
+.color-error {
+  color: #FE5F55;
+}
+
+.border-error {
+  border: 1px solid #FE5F55;
+}
+
+.bg-success {
+  background-color: #577399;
+}
+
+.color-success {
+  color: #577399;
+}
+
+.border-success {
+  border: 1px solid #577399;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: #BDD5EA;
+  font-size: 2rem;
+}
+
+a {
+  color: #BDD5EA;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+* {
+  font-family: "Martel", serif;
+}
+
+.header-container {
+  align-items: center;
+  background-color: #02111B;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  min-height: 62px;
+  position: fixed;
+  padding: 8px;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+nav ul li {
+  margin: 0 16px;
+}
+
+a:link {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(2, 87, 140);
+  font-size: 1.75rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-container {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=main.css.map */
