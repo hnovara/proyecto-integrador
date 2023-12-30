@@ -176,6 +176,12 @@ h1 {
 .header-container a {
   text-decoration: none;
 }
+.header-container a h1 {
+  text-shadow: 2px 2px 4px silver;
+}
+.header-container a h1:hover {
+  text-shadow: 4px 4px 8px silver;
+}
 .header-container nav ul {
   list-style-type: none;
   display: flex;
@@ -189,6 +195,7 @@ h1 {
 .header-container nav ul li a {
   text-decoration: none;
   padding: 0 2rem 0 0;
+  font-weight: 600;
 }
 .header-container nav ul li a:link {
   color: #577399;
