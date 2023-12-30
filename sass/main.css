@@ -169,7 +169,7 @@ body {
 .header-container {
   align-items: center;
   background-color: #02111B;
-  border-bottom: 0.25rem solid #BDD5EA;
+  border-bottom: 0.25rem solid #577399;
   display: flex;
   justify-content: space-between;
   min-height: 7rem;
@@ -217,12 +217,12 @@ body {
 
 .main-container {
   min-height: 25rem;
-  background-color: #BDD5EA;
 }
 
 .footer-container {
   align-items: center;
-  border-top: 0.25rem solid #02111B;
+  background-color: #BDD5EA;
+  border-top: 0.25rem solid #577399;
   display: flex;
   justify-content: center;
   min-height: 1rem;

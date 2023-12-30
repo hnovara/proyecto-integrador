@@ -1,6 +1,7 @@
 .footer-container {
     align-items: center;
-    border-top: 0.25rem solid $primary-color;
+    background-color: $secondary-color;
+    border-top: 0.25rem solid $success-color;
     display: flex;
     justify-content: center;
     min-height: 1rem;
