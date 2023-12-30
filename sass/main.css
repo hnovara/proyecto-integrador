@@ -145,54 +145,62 @@ h1 {
 
 a {
   color: #BDD5EA;
-  text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
-  color: black;
-  font-size: 2rem;
+  color: #02111B;
+  font-size: 1.5rem;
 }
 
 * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
   font-family: "Martel", serif;
 }
 
 .header-container {
   align-items: center;
   background-color: #02111B;
-  border-bottom: 1px solid black;
+  border-bottom: 0.25rem solid #BDD5EA;
   display: flex;
   justify-content: space-between;
-  min-height: 62px;
+  min-height: 7rem;
   position: fixed;
-  padding: 8px;
+  padding: 0.25rem 2rem;
   top: 0;
   width: 100%;
 }
-
-nav ul {
+.header-container a {
+  text-decoration: none;
+}
+.header-container nav ul {
   list-style-type: none;
   display: flex;
   padding: 0;
   flex-wrap: wrap;
   justify-content: end;
 }
-
-nav ul li {
-  margin: 0 16px;
+.header-container nav ul li {
+  margin: 0 2rem 0 0;
 }
-
-a:link {
-  color: grey;
+.header-container nav ul li a {
+  text-decoration: none;
+  padding: 0 2rem 0 0;
+}
+.header-container nav ul li a:link {
+  color: #577399;
   text-decoration: none;
 }
-
-a:hover {
-  color: rgb(2, 87, 140);
-  font-size: 1.75rem;
-  text-decoration: underline;
+.header-container nav ul li a:hover {
+  color: white;
   cursor: pointer;
+}
+.header-container nav ul li a:active {
+  color: #FE5F55;
+  text-decoration: underline;
 }
 
 .main-container {

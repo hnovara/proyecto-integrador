@@ -1,33 +1,47 @@
 .header-container {
     align-items: center;
     background-color: $primary-color;
-    border-bottom: 1px solid black;
+    border-bottom: 0.25rem solid $secondary-color;
     display: flex;
     justify-content: space-between;
-    min-height: 62px;
+    min-height: 7rem;
     position: fixed;
-    padding: 8px;
+    padding: 0.25rem 2rem;
     top: 0;
     width: 100%;
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: end;
-}
-nav ul li {
-    margin: 0 16px;
-}
-a:link {
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(2, 87, 140);
-    font-size: 1.75rem;
-    text-decoration: underline;
-    cursor: pointer;
+    a {
+        text-decoration: none;
+    }
+    nav {
+        ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: end;
+            li {
+                margin: 0 2rem 0 0;
+                a {
+                    text-decoration: none;
+                    padding: 0 2rem 0 0;
+                    &:link {
+                        color: $success-color;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        color: lighten($color: $secondary-color, $amount: 50);
+                        cursor: pointer;
+                    }
+                    // &:visited  {
+                        //     color: rgb(114, 12, 114);
+                        //     text-decoration: none;
+                        // }
+                        &:active {
+                            color: $error-color;
+                            text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }

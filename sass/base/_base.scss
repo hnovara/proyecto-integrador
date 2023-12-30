@@ -11,10 +11,9 @@ h1 {
 }
 a {
     color: $secondary-color;
-    text-decoration: none;
-    font-size: $font-size-lg;
+    font-size: $font-size-md;
 }
 p {
-    color: darken($color: $primary-color, $amount: 20);
-    font-size: $font-size-lg;
+    color: $primary-color;
+    font-size: $font-size-md;
 }
