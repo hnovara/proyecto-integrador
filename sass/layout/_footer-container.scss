@@ -1,16 +1,14 @@
 .footer-container {
     align-items: center;
-    background-color: $secondary-color;
-    border-top: 0.25rem solid $success-color;
+    background-color: $success-color; 
+    // border-top: 0.3rem solid $error-color;
     display: flex;
-    height: 6rem;
     justify-content: space-between;
     padding: 0 2rem;
 }
 .contact-container {
     p {
         justify-content: left;
-        font-size: 0.8rem;
         margin: 0;
     }
 }

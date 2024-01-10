@@ -7,13 +7,21 @@ body {
 }
 h1 {
     color: $secondary-color;
+    font-size: $font-size-xxl;
+}
+h3 {
     font-size: $font-size-lg;
 }
 a {
     color: $secondary-color;
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
 }
 p {
     color: $primary-color;
     font-size: $font-size-md;
 }
+
+// $font-size-md
+// $font-size-lg
+// $font-size-xl
+// $font-size-xxl
