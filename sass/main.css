@@ -130,6 +130,11 @@
   width: 100%;
 }
 
+@media (max-width: 1050px) {
+  .d-none {
+    display: none;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -144,12 +149,12 @@ h1 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 a {
   color: #BDD5EA;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 p {
@@ -194,7 +199,7 @@ body {
 .header-container nav ul li a {
   text-align: right;
   text-decoration: none;
-  padding: 0 2rem;
+  padding: 0 2.4rem;
   font-weight: 600;
 }
 .header-container nav ul li a:link {
@@ -329,6 +334,14 @@ body {
   margin: 0;
 }
 
+@media (max-width: 1050px) {
+  .card-container .card {
+    height: 27rem;
+  }
+  .card-container .card .h-description {
+    height: 3.5rem;
+  }
+}
 i {
   color: #02111B;
   padding: 0.4rem;

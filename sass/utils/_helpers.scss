@@ -1,4 +1,3 @@
-
 $colors: (
     primary: $primary-color,
     secondary: $secondary-color,
@@ -27,5 +26,10 @@ $colors: (
     }
     .w-#{$i * 10} {
         width: $i * 10%;
+    }
+}
+@media (max-width: 1050px) {
+    .d-none {
+        display: none;
     }
 }

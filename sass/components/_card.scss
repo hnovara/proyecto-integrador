@@ -34,3 +34,13 @@
         }
     }
 }
+@media (max-width: 1050px) {
+    .card-container {
+        .card {
+            height: 27rem;
+            .h-description {
+                height: 3.5rem;
+            }
+        }
+    }
+}
