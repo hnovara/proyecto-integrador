@@ -6,4 +6,7 @@ input {
 .i-search {
     width: 10rem;
 }
-
+.input-msg-error {
+    display: none;
+    color: $error-color;
+}

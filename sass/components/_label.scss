@@ -1,0 +1,5 @@
+.label-required::after {
+    content: "(*)";
+    color: $error-color;
+    margin-left: 0.5rem;
+}

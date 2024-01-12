@@ -37,6 +37,30 @@
     
 
     <main class="main-container">
+        <h2>Contactanos</h2>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <form id="uploadForm" onsubmit="onSubmitContact(event)">
+                        <div class="mb-3">
+                          <label for="name" class=" label-required">Nombre</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                          <p id="nameError" class="input-msg-error"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail" class=" label-required">Email</label>
+                            <input type="email" class="form-control" id="mail" name="mail" required>
+                            <p id="mailError" class="input-msg-error"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="">Comentarios</label>
+                            <textarea type="text" class="form-control" id="comment" name="comment" maxlength="400"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar comentarios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -60,5 +84,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/dae12e3583.js" crossorigin="anonymous"></script>
+    <script src="../js/validations.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

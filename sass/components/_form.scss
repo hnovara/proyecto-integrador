@@ -1,0 +1,3 @@
+.form-control[aria-invalid="true"] {
+    outline: 2px solid $error-color;
+}
