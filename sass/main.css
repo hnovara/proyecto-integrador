@@ -154,7 +154,7 @@ a {
 
 p {
   color: #02111B;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 * {
@@ -209,13 +209,39 @@ body {
   color: #FE5F55;
   text-decoration: underline;
 }
-.header-container .form-header {
-  width: 15rem;
+.header-container .form-search {
+  display: block;
+  width: 13rem;
 }
 
+@media (max-width: 1050px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .header-container a h1 {
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+  .header-container .form-search {
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .header-container .form-search input {
+    width: 20.5rem;
+  }
+}
 .main-container {
   min-height: 26.4rem;
   background-color: #BDD5EA;
+}
+.main-container .banner1 {
+  width: 100%;
 }
 
 .footer-container {
@@ -268,6 +294,7 @@ body {
 
 .card-container {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -278,7 +305,7 @@ body {
   border-radius: 0.75rem;
   box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  height: 27rem;
+  height: 28.5rem;
   margin: 1.5rem 1rem;
   text-align: center;
   width: 16.5rem;
@@ -294,7 +321,25 @@ body {
   height: 15rem;
   margin: 0;
 }
-.card-container .card p {
+.card-container .card .h-description {
   height: 4.5rem;
+  margin: 0 1rem;
+}
+.card-container .card .h-description p {
   margin: 0;
+}
+
+i {
+  color: #02111B;
+  padding: 0.4rem;
+}
+
+input {
+  background-color: #EFEFEF;
+  color: #02111B;
+  padding: 0.4rem;
+}
+
+.i-search {
+  width: 10rem;
 }/*# sourceMappingURL=main.css.map */

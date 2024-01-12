@@ -45,7 +45,33 @@ body {
             }
         }
     }
-    .form-header {
-        width: 15rem;
+    .form-search {
+        display: block;
+        width: 13rem;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        a {
+            h1 {
+                padding: 1rem 0 0 0 ;
+                margin: 0;
+            }
+        }
+        .form-search {
+            display: block;
+            margin: 0 auto;
+            padding: 0 0 1rem 0;
+            width: max-content;
+            input {
+                width: 20.5rem;
+            }
+        }
     }
 }
