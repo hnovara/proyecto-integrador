@@ -4,4 +4,14 @@
     .banner1 {
         width: 100%;
     }
+    .container-2 {
+        padding: 3rem;
+    }
+}
+@media (max-width: 470px) {
+    .main-container {
+        .container-2 {
+            padding: 0.5rem;
+        }
+    }
 }

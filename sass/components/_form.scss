@@ -1,3 +1,23 @@
 .form-control[aria-invalid="true"] {
     outline: 2px solid $error-color;
 }
+.info-container {
+    height: 6rem;
+    width: 25rem;
+    p {
+        margin: 0.2rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 470px) and (max-width: 900px) {
+    .info-container {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .info-container {
+        width: 16rem;
+    }
+}

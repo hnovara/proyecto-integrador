@@ -1,5 +1,16 @@
+
 .label-required::after {
-    content: "(*)";
+    content: "*";
     color: $error-color;
     margin-left: 0.5rem;
 }
+label {
+    display: inline-block;
+    color: $primary-color;
+    font-size: $font-size-lg;
+    font-weight: bold;
+    margin: 0.25rem;
+    text-align: left;
+    width: 15rem;
+}
+

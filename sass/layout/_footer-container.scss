@@ -1,10 +1,9 @@
 .footer-container {
     align-items: center;
     background-color: $success-color; 
-    // border-top: 0.3rem solid $error-color;
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 6rem;
 }
 .contact-container {
     p {
@@ -30,4 +29,14 @@
             }
         }
     }
+}
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 2rem 0 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }

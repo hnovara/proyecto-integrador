@@ -3,43 +3,48 @@ body {
 
 }
 .header-container {
-    align-items: center;
     background-color: $primary-color;
-    border-bottom: 0.3rem solid $error-color;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 2rem;
+    padding: 1.25rem 0 0 0;
     a {
         text-decoration: none;
         h1 {
+            padding: 0 5.75rem;
+            margin: 0;
             text-shadow: 2px 2px 4px silver; 
             &:hover {
             text-shadow: 4px 4px 8px silver;  
             }   
         }
     }
-    nav {
-        ul {
-        list-style-type: none;
+    .header-container-sec {
+        align-items: center;
+        border-bottom: 0.3rem solid $error-color;
         display: flex;
-        padding: 0;
-            li {
-                a {
-                    text-align: right;
-                    text-decoration: none;
-                    padding: 0 2.4rem;
-                    font-weight: 600;
-                    &:link {
-                        color: $success-color;
+        justify-content: space-between;
+        padding: 0.25rem 2rem;
+        nav {
+            ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+                li {
+                    a {
+                        text-align: right;
                         text-decoration: none;
-                    }
-                    &:hover {
-                        color: lighten($color: $secondary-color, $amount: 50);
-                        cursor: pointer;
-                    }
-                    &:active {
-                        color: $error-color;
-                        text-decoration: underline;
+                        padding: 0 1.8rem;
+                        font-weight: 600;
+                        &:link {
+                            color: $success-color;
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            color: lighten($color: $secondary-color, $amount: 50);
+                            cursor: pointer;
+                        }
+                        &:active {
+                            color: $error-color;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -47,31 +52,65 @@ body {
     }
     .form-search {
         display: block;
-        width: 13rem;
+        width: 18rem;
     }
 }
 
 
-@media (max-width: 1050px) {
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        a {
-            h1 {
-                padding: 1rem 0 0 0 ;
-                margin: 0;
+@media (min-width: 470px) and (max-width: 900px) {
+    .header-container{
+        text-align: center;
+    
+        .header-container-sec {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            a {
+                h1 {
+                    padding: 1rem 0 0 0 ;
+                    margin: 0;
+                }
             }
-        }
-        .form-search {
-            display: block;
-            margin: 0 auto;
-            padding: 0 0 1rem 0;
-            width: max-content;
-            input {
-                width: 20.5rem;
+            .form-search {
+                display: block;
+                margin: 0 auto;
+                padding: 0 0 1rem 0;
+                width: max-content;
+                input {
+                    width: 22rem;
+                }
             }
         }
     }
+}
+
+
+@media (max-width: 470px) {
+    .header-container{
+        text-align: center;
+    
+        .header-container-sec {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            a {
+                h1 {
+                    padding: 1rem 0 0 0 ;
+                    margin: 0;
+                }
+            }
+            .form-search {
+                display: block;
+                margin: 0 auto;
+                padding: 0 0 1rem 0;
+                width: max-content;
+                input {
+                    width: 18rem;
+                }
+            }
+        }
+    }
+
 }

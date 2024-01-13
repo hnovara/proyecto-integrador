@@ -1,12 +1,23 @@
 input {
-    background-color: #EFEFEF;
+    background-color: lighten($color: $success-color, $amount: 30);
     color: $primary-color;
     padding: 0.4rem;
+    width: 24rem;
+}
+.b-photo {
+    background-color: transparent;
 }
 .i-search {
-    width: 10rem;
+    width: 15rem;
+    background-color: #EFEFEF;
 }
 .input-msg-error {
     display: none;
     color: $error-color;
+}
+
+@media (max-width: 600px) {
+    input{
+        width: 16rem;
+    }
 }
