@@ -1,5 +1,5 @@
 .main-container {
-    min-height: 26.4rem;
+    min-height: 23.8rem;
     background-color: $secondary-color;
     .banner1 {
         width: 100%;
@@ -8,7 +8,7 @@
         padding: 3rem;
     }
 }
-@media (max-width: 470px) {
+@media (max-width: 600px) {
     .main-container {
         .container-2 {
             padding: 0.5rem;

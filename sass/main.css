@@ -275,7 +275,7 @@ body {
   }
 }
 .main-container {
-  min-height: 26.4rem;
+  min-height: 23.8rem;
   background-color: #BDD5EA;
 }
 .main-container .banner1 {
@@ -285,7 +285,7 @@ body {
   padding: 3rem;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
   .main-container .container-2 {
     padding: 0.5rem;
   }
@@ -357,9 +357,9 @@ body {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   color: white;
   font-weight: bold;
-  margin: 0.75rem;
+  margin: 0;
   padding: 0.5rem 0;
-  width: 24.25rem;
+  width: 25rem;
 }
 .b-alta:hover {
   background-color: #738db0;
@@ -424,10 +424,9 @@ body {
     height: 3.5rem;
   }
 }
-.fieldset-alta {
-  display: flex;
+fieldset {
   align-items: left;
-  background-image: url("/img/fondo-toys2.jpg");
+  display: flex;
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,11 +436,10 @@ body {
   border-radius: 1.5rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   flex-direction: column;
-  justify-content: center;
   padding: 2rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.fieldset-alta legend {
+fieldset legend {
   background-color: #a4b5cb;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.2);
   border: 0.25rem solid #577399;
@@ -453,6 +451,22 @@ body {
   padding: 0.12rem 0.5rem;
   text-align: center;
   width: 20rem;
+}
+fieldset .container-3 {
+  flex-direction: column;
+}
+
+.fieldset-alta {
+  background-image: url("/img/fondo-toys2.jpg");
+}
+
+.fieldset-contacto {
+  background-image: url("/img/fondo-toys1.jpg");
+  flex-direction: row;
+}
+.fieldset-contacto .fielset-img {
+  width: 22rem;
+  margin: 0 0 0 3.5rem;
 }
 
 @media (max-width: 600px) {
@@ -578,9 +592,10 @@ textarea {
   border: 2px inset rgba(0, 0, 0, 0.678);
   border-radius: 0.25rem;
   background-color: #b4c2d5;
-  height: 8rem;
+  min-height: 8rem;
+  resize: none;
   padding: 0.125rem 0.5rem;
-  width: 24rem;
+  width: 23.75rem;
 }
 
 textarea:focus {

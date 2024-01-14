@@ -37,25 +37,29 @@
         </div>
     </header>
     <main class="main-container">
+        <img class="banner1" src="../img/banner2.jpg" alt="banner blanco con chicos jugando en dibujitos">
         <div class="container-2">
             <form id="uploadForm" onsubmit="onSubmitContact(event)">
-                <fieldset>
-                    <legend>Contactanos</legend>
-                    <div class="">
-                      <label for="name" class=" label-required">Nombre</label>
-                      <input type="text" class="form-control" id="name" name="name" required>
-                      <p id="nameError" class="input-msg-error"></p>
+                <fieldset class="fieldset-contacto">
+                    <legend>Contacto</legend>
+                    <div class="container-3">
+                        <div class="info-container">
+                            <label for="name" class=" label-required">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <p id="nameError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="mail" class=" label-required">Email</label>
+                            <input type="email" class="form-control" id="mail" name="mail" required>
+                            <p id="mailError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container-textarea">
+                            <label for="comment" class="form-label">Comentarios</label>
+                            <textarea type="text" class="form-control" id="comment" name="comment" maxlength="400"></textarea>
+                        </div>
+                        <button type="submit" class="b-alta">Enviar comentarios</button>
                     </div>
-                    <div class="">
-                        <label for="mail" class=" label-required">Email</label>
-                        <input type="email" class="form-control" id="mail" name="mail" required>
-                        <p id="mailError" class="input-msg-error"></p>
-                    </div>
-                    <div class="">
-                        <label for="comment" class="">Comentarios</label>
-                        <textarea type="text" class="form-control" id="comment" name="comment" maxlength="400"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar comentarios</button>
+                    <img class="fielset-img" src="../img/fondo-nene.png" alt="nene en dibujito jugando con los autitos">
                 </fieldset>
             </form>
         </div>

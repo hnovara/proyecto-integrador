@@ -3,9 +3,10 @@ textarea {
     border: 2px inset rgba(0, 0, 0, 0.678);
     border-radius: 0.25rem;
     background-color: lighten($color: $success-color, $amount: 30);
-    height: 8rem;
+    min-height: 8rem;
+    resize: none;
     padding: 0.125rem 0.5rem;
-    width: 24rem;
+    width: 23.75rem;
 }
 textarea:focus {
     background-color: $secondary-color;
