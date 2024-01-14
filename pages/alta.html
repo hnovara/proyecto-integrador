@@ -81,7 +81,7 @@
                     <div class="container-4"> 
                         <div class="info-container">
                             <label for="shortDescription" class="form-label label-required">Descripción corta</label>
-                            <input type="text" class="form-control" id="shortDescription" name="shortDescription" required maxlength="120">
+                            <input type="text" class="form-control in-shortDes" id="shortDescription" name="shortDescription" required maxlength="120">
                             <p id="shortDescriptionError" class="input-msg-error"></p>
                         </div>
                         <div class="info-container-textarea-alta">
@@ -90,14 +90,16 @@
                         </div>
                         <div class="info-container">
                             <label for="photo" class="form-label label-required">Foto</label>
-                            <input type="file" class="form-control b-photo" id="photo" name="photo" required>
+                            <input type="file" class="form-control info-container-photo" id="photo" name="photo" required>
                             <p id="photoError" class="input-msg-error"></p>
                         </div>
                         <div class="info-container-check">
                             <label for="freeDeliver" class="form-label d-label-check">Envio sin cargo</label>
                             <input type="checkbox" class="form-checkbox d-input-check" id="freeDeliver" name="freeDeliver" checked>
                         </div>
-                        <button type="submit" class="b-alta">Guardar producto</button>
+                        <div class="info-container">
+                            <button type="submit" class="b-alta">Guardar producto</button>  
+                        </div>
                     </div>
                 </fieldset>
             </form>

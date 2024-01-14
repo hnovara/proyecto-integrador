@@ -6,7 +6,7 @@ textarea {
     min-height: 13.5rem;
     resize: none;
     padding: 0.125rem 0.5rem;
-    width: 20.25rem;
+    width: 23.75rem;
 }
 textarea:focus {
     background-color: $secondary-color;
@@ -14,8 +14,18 @@ textarea:focus {
 .h-textarea-contacto {
     min-height: 7rem;
 }
-@media (max-width: 600px) {
+@media (min-width: 900px) and (max-width: 1200px) {
     textarea {
-        width: 16rem;
+        width: 19.75rem;
+    }
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    textarea {
+        width: 31.75rem;
+    }
+}
+@media (max-width: 620px) {
+    textarea {
+        width: 15.75rem;
     }
 }

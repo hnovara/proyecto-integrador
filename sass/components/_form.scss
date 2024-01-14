@@ -3,7 +3,7 @@
 }
 .info-container {
     height: 6rem;
-    width: 25rem;
+    text-align: center;
     p {
         margin: 0.2rem;
         font-weight: bold;
@@ -11,7 +11,7 @@
 }
 .info-container-textarea-alta {
     height: 18.25rem;
-    width: 25rem;
+    text-align: center;
     p {
         margin: 0.2rem;
         font-weight: bold;
@@ -19,7 +19,7 @@
 }
 .info-container-textarea {
     height: 12.5rem;
-    width: 25rem;
+    text-align: center;
     p {
         margin: 0.2rem;
         font-weight: bold;
@@ -27,38 +27,32 @@
 }
 .info-container-check {
     height: 6rem;
+    text-align: center;
     p {
         margin: 0.2rem;
         font-weight: bold;
     }
 }
-
-@media (min-width: 470px) and (max-width: 900px) {
+.info-container-photo {
+    background-color: transparent;
+}
+@media (min-width: 1300px) and (max-width: 5000px) {
     .info-container {
-        width: 17rem;
-    }
-    .info-container-check {
-        width: 17rem;
-    }
-    .info-container-textarea {
-        width: 17rem;
+        width: 30rem;
     }
     .info-container-textarea-alta {
-        width: 17rem;
+        width: 30rem;
+    }
+    .info-container-textarea {
+        width: 30rem;
+    }
+    .info-container-check {
+        width: 30rem;
     }
 }
-
-@media (max-width: 470px) {
-    .info-container {
-        width: 17rem;
-    }
-    .info-container-check {
-        width: 17rem;
-    }
-    .info-container-textarea {
-        width: 17rem;
-    }
-    .info-container-textarea-alta {
-        width: 17rem;
+@media (max-width: 900px) {
+    .info-container-photo {
+        background-color: transparent;
+        width: 62%;
     }
 }

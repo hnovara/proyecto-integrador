@@ -28,9 +28,9 @@
     color: lighten($color: $secondary-color, $amount: 30);
     font-size: $font-size-lg;
     font-weight: bold;
-    margin: 0.9rem 0 0 0;
+    margin: 0.9rem auto;
     padding: 0.75rem 0;
-    width: 21.5rem;
+    width: 25rem;
     &:hover {
         background-color: lighten($color: $success-color, $amount: 10);
         cursor: pointer;
@@ -41,8 +41,20 @@
         color: $primary-color;
     }
 }
-@media (max-width: 600px) {
-    .b-alta{
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .b-alta {
+        width: 21rem;
+    }
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    .b-alta {
+        width: 33rem;
+    }
+}
+@media (max-width: 620px) {
+    .b-alta {
         width: 17rem;
     }
 }

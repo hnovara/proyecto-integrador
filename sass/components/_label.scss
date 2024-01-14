@@ -9,12 +9,22 @@ label {
     color: $primary-color;
     font-size: $font-size-lg;
     font-weight: bold;
-    margin: 0.25rem;
+    margin: 0.25rem 0 0 0;
+    padding: 0.2rem 0;
     text-align: left;
-    width: 15rem;
+    width: 24rem;
 }
-.d-label-check {
-    width: 10rem;
+@media (min-width: 900px) and (max-width: 1200px) {
+    label{
+        width: 20rem;
+    }
 }
+@media (max-width: 900px) {
+    label{
+        text-align: center;
+        width: 100%;
+    }
+}
+
 
 

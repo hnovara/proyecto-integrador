@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 h1 {
-    color: $secondary-color;
+    color: lighten($color: $secondary-color, $amount: 20);
     font-size: $font-size-xxl;
 }
 h3 {

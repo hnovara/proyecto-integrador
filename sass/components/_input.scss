@@ -3,7 +3,7 @@ input {
     border-radius: 0.25rem;
     color: $primary-color;
     padding: 0.4rem;
-    width: 20.5rem;
+    width: 24rem;
 }
 .b-photo {
     background-color: transparent;
@@ -11,20 +11,35 @@ input {
 .i-search {
     width: 15rem;
     background-color: #EFEFEF;
+    &:hover {
+        background-color: #efefeff5;
+    }
 }
 .input-msg-error {
     display: none;
     color: $error-color;
 }
-.d-input-check {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    width: 1rem;
-}
 input:focus {
     background-color: $secondary-color;
 }
-@media (max-width: 600px) {
+@media (min-width: 900px) and (max-width: 1200px) {
     input{
+        width: 20rem;
+    }
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    input{
+        width: 32rem;
+    }
+    .in-shortDes {
+        width: 32rem;
+    }
+}
+@media (max-width: 620px) {
+    input{
+        width: 16rem;
+    }
+    .in-shortDes {
         width: 16rem;
     }
 }
