@@ -431,7 +431,7 @@ body {
   margin: 0;
 }
 .card-container .card:hover {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 2px 2px #FE5F55;
 }
 
 @media (max-width: 1050px) {
@@ -574,6 +574,11 @@ i {
   padding: 0.4rem;
   height: 0.75rem;
   width: 0.75rem;
+}
+
+.img-nosotros {
+  height: 25rem;
+  width: 25rem;
 }
 
 input {
