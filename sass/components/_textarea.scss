@@ -3,13 +3,16 @@ textarea {
     border: 2px inset rgba(0, 0, 0, 0.678);
     border-radius: 0.25rem;
     background-color: lighten($color: $success-color, $amount: 30);
-    min-height: 8rem;
+    min-height: 13.5rem;
     resize: none;
     padding: 0.125rem 0.5rem;
-    width: 23.75rem;
+    width: 20.25rem;
 }
 textarea:focus {
     background-color: $secondary-color;
+}
+.h-textarea-contacto {
+    min-height: 7rem;
 }
 @media (max-width: 600px) {
     textarea {

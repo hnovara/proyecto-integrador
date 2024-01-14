@@ -41,60 +41,64 @@
             <form id="uploadForm" onsubmit="onSubmitProduct(event)">
                 <fieldset class="fieldset-alta">
                     <legend>Alta de productos</legend>
-                    <div class="info-container">
-                      <label for="name" class="label-required">Nombre</label>
-                      <input type="text" class="form-control" id="name" name="name" required>
-                      <p id="nameError" class="input-msg-error"></p>
+                    <div class="container-3">
+                        <div class="info-container">
+                          <label for="name" class="label-required">Nombre</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                          <p id="nameError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="price" class="label-required">Precio</label>
+                            <input type="number" class="form-control" id="price" name="price" required>
+                            <p id="priceError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="stock" class=" label-required">Stock</label>
+                            <input type="number" class="form-control" id="stock" name="stock" required min="0">
+                            <p id="stockError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="category" class="form-label label-required">Categoría</label>
+                            <input type="text" class="form-control" id="category" name="category" required>
+                            <p id="categoryError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="brand" class="form-label">Marca</label>
+                            <input type="text" class="form-control" id="brand" name="brand" maxlength="20">
+                            <p id="brandError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="ageFrom" class="form-label">Edad desde</label>
+                            <input type="number" class="form-control" id="ageFrom" name="ageFrom" min="0">
+                            <p id="ageFromError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container">
+                            <label for="ageTo" class="form-label">Edad hasta</label>
+                            <input type="number" class="form-control" id="ageTo" name="ageTo" min="1">
+                            <p id="ageToError" class="input-msg-error"></p>
+                        </div>
                     </div>
-                    <div class="info-container">
-                        <label for="price" class="label-required">Precio</label>
-                        <input type="number" class="form-control" id="price" name="price" required>
-                        <p id="priceError" class="input-msg-error"></p>
+                    <div class="container-4"> 
+                        <div class="info-container">
+                            <label for="shortDescription" class="form-label label-required">Descripción corta</label>
+                            <input type="text" class="form-control" id="shortDescription" name="shortDescription" required maxlength="120">
+                            <p id="shortDescriptionError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container-textarea-alta">
+                            <label for="longDescription" class="form-label">Descripción larga</label>
+                            <textarea type="text" class="form-control" id="longDescription" name="longDescription" minlength="60" maxlength="400"></textarea>
+                        </div>
+                        <div class="info-container">
+                            <label for="photo" class="form-label label-required">Foto</label>
+                            <input type="file" class="form-control b-photo" id="photo" name="photo" required>
+                            <p id="photoError" class="input-msg-error"></p>
+                        </div>
+                        <div class="info-container-check">
+                            <label for="freeDeliver" class="form-label d-label-check">Envio sin cargo</label>
+                            <input type="checkbox" class="form-checkbox d-input-check" id="freeDeliver" name="freeDeliver" checked>
+                        </div>
+                        <button type="submit" class="b-alta">Guardar producto</button>
                     </div>
-                    <div class="info-container">
-                        <label for="stock" class=" label-required">Stock</label>
-                        <input type="number" class="form-control" id="stock" name="stock" required min="0">
-                        <p id="stockError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="category" class="form-label label-required">Categoría</label>
-                        <input type="text" class="form-control" id="category" name="category" required>
-                        <p id="categoryError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="brand" class="form-label">Marca</label>
-                        <input type="text" class="form-control" id="brand" name="brand" maxlength="20">
-                        <p id="brandError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="ageFrom" class="form-label">Edad desde</label>
-                        <input type="number" class="form-control" id="ageFrom" name="ageFrom" min="0">
-                        <p id="ageFromError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="ageTo" class="form-label">Edad hasta</label>
-                        <input type="number" class="form-control" id="ageTo" name="ageTo" min="1">
-                        <p id="ageToError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="shortDescription" class="form-label label-required">Descripción corta</label>
-                        <input type="text" class="form-control" id="shortDescription" name="shortDescription" required maxlength="120">
-                        <p id="shortDescriptionError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container-textarea">
-                        <label for="longDescription" class="form-label">Descripción larga</label>
-                        <textarea type="text" class="form-control" id="longDescription" name="longDescription" minlength="60" maxlength="400"></textarea>
-                    </div>
-                    <div class="info-container">
-                        <label for="photo" class="form-label label-required">Foto</label>
-                        <input type="file" class="form-control b-photo" id="photo" name="photo" required>
-                        <p id="photoError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container-check">
-                        <label for="freeDeliver" class="form-label d-label-check">Envio sin cargo</label>
-                        <input type="checkbox" class="form-checkbox d-input-check" id="freeDeliver" name="freeDeliver" checked>
-                    </div>
-                    <button type="submit" class="b-alta">Guardar producto</button>
                 </fieldset>
             </form>
         </div>

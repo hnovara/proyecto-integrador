@@ -9,7 +9,7 @@ fieldset {
     border: 0.25rem solid $success-color;
     border-radius: 1.5rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
-    flex-direction: column;
+    flex-direction: row;
     padding: 2rem;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
     legend {
@@ -27,10 +27,17 @@ fieldset {
     }
     .container-3 {
         flex-direction: column;
+
+    }
+    .container-4 {
+        flex-direction: column;
+        margin: 0 0 0 1rem;
     }
 }
+
 .fieldset-alta {
     background-image: url("/img/fondo-toys2.jpg");
+    flex-direction: row;
 }
 .fieldset-contacto {
     background-image: url("/img/fondo-toys.jpg");
@@ -40,10 +47,15 @@ fieldset {
    margin: 0 0 0 3.5rem;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .fieldset-alta {
+        flex-direction: column;
         legend {
             width: 15rem;
         }
-    }
-}
+        .container-4 {
+            margin: 0;
+        }
+    }  
+} 
+

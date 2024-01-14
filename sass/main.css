@@ -356,10 +356,11 @@ body {
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin: 0;
-  padding: 0.5rem 0;
-  width: 25rem;
+  margin: 0.9rem 0 0 0;
+  padding: 0.75rem 0;
+  width: 21.5rem;
 }
 .b-alta:hover {
   background-color: #738db0;
@@ -373,7 +374,7 @@ body {
 
 @media (max-width: 600px) {
   .b-alta {
-    width: 16rem;
+    width: 17rem;
   }
 }
 .card-container {
@@ -435,7 +436,7 @@ fieldset {
   border: 0.25rem solid #577399;
   border-radius: 1.5rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  flex-direction: column;
+  flex-direction: row;
   padding: 2rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -455,9 +456,14 @@ fieldset legend {
 fieldset .container-3 {
   flex-direction: column;
 }
+fieldset .container-4 {
+  flex-direction: column;
+  margin: 0 0 0 1rem;
+}
 
 .fieldset-alta {
   background-image: url("/img/fondo-toys2.jpg");
+  flex-direction: row;
 }
 
 .fieldset-contacto {
@@ -469,9 +475,15 @@ fieldset .container-3 {
   margin: 0 0 0 3.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .fieldset-alta {
+    flex-direction: column;
+  }
   .fieldset-alta legend {
     width: 15rem;
+  }
+  .fieldset-alta .container-4 {
+    margin: 0;
   }
 }
 .form-control[aria-invalid=true] {
@@ -483,6 +495,15 @@ fieldset .container-3 {
   width: 25rem;
 }
 .info-container p {
+  margin: 0.2rem;
+  font-weight: bold;
+}
+
+.info-container-textarea-alta {
+  height: 18.25rem;
+  width: 25rem;
+}
+.info-container-textarea-alta p {
   margin: 0.2rem;
   font-weight: bold;
 }
@@ -514,6 +535,9 @@ fieldset .container-3 {
   .info-container-textarea {
     width: 17rem;
   }
+  .info-container-textarea-alta {
+    width: 17rem;
+  }
 }
 @media (max-width: 470px) {
   .info-container {
@@ -523,6 +547,9 @@ fieldset .container-3 {
     width: 17rem;
   }
   .info-container-textarea {
+    width: 17rem;
+  }
+  .info-container-textarea-alta {
     width: 17rem;
   }
 }
@@ -536,7 +563,7 @@ input {
   border-radius: 0.25rem;
   color: #02111B;
   padding: 0.4rem;
-  width: 24rem;
+  width: 20.5rem;
 }
 
 .b-photo {
@@ -592,14 +619,18 @@ textarea {
   border: 2px inset rgba(0, 0, 0, 0.678);
   border-radius: 0.25rem;
   background-color: #b4c2d5;
-  min-height: 8rem;
+  min-height: 13.5rem;
   resize: none;
   padding: 0.125rem 0.5rem;
-  width: 23.75rem;
+  width: 20.25rem;
 }
 
 textarea:focus {
   background-color: #BDD5EA;
+}
+
+.h-textarea-contacto {
+  min-height: 7rem;
 }
 
 @media (max-width: 600px) {
