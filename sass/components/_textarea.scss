@@ -1,0 +1,17 @@
+textarea {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border: 2px inset rgba(0, 0, 0, 0.678);
+    border-radius: 0.25rem;
+    background-color: lighten($color: $success-color, $amount: 30);
+    height: 8rem;
+    padding: 0.125rem 0.5rem;
+    width: 24rem;
+}
+textarea:focus {
+    background-color: $secondary-color;
+}
+@media (max-width: 600px) {
+    textarea {
+        width: 16rem;
+    }
+}

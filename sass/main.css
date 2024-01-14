@@ -339,13 +339,43 @@ body {
   text-decoration: none;
 }
 .buy-button:hover {
+  background-color: #062f4a;
+  cursor: pointer;
+}
+.buy-button:active {
   background-color: #FE5F55;
   cursor: pointer;
 }
-.buy-button:hover a {
+.buy-button:active a {
   color: #02111B;
 }
 
+.b-alta {
+  background-color: #577399;
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+  margin: 0.75rem;
+  padding: 0.5rem 0;
+  width: 24.25rem;
+}
+.b-alta:hover {
+  background-color: #738db0;
+  cursor: pointer;
+}
+.b-alta:active {
+  background-color: #FE5F55;
+  cursor: pointer;
+  color: #02111B;
+}
+
+@media (max-width: 600px) {
+  .b-alta {
+    width: 16rem;
+  }
+}
 .card-container {
   display: flex;
   flex-flow: wrap;
@@ -412,7 +442,7 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .fieldset-alta legend {
-  background-color: #b4c2d5;
+  background-color: #a4b5cb;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.2);
   border: 0.25rem solid #577399;
   border-radius: 0.5rem;
@@ -443,14 +473,43 @@ body {
   font-weight: bold;
 }
 
+.info-container-textarea {
+  height: 12.5rem;
+  width: 25rem;
+}
+.info-container-textarea p {
+  margin: 0.2rem;
+  font-weight: bold;
+}
+
+.info-container-check {
+  height: 6rem;
+}
+.info-container-check p {
+  margin: 0.2rem;
+  font-weight: bold;
+}
+
 @media (min-width: 470px) and (max-width: 900px) {
   .info-container {
-    width: 16rem;
+    width: 17rem;
+  }
+  .info-container-check {
+    width: 17rem;
+  }
+  .info-container-textarea {
+    width: 17rem;
   }
 }
 @media (max-width: 470px) {
   .info-container {
-    width: 16rem;
+    width: 17rem;
+  }
+  .info-container-check {
+    width: 17rem;
+  }
+  .info-container-textarea {
+    width: 17rem;
   }
 }
 i {
@@ -460,6 +519,7 @@ i {
 
 input {
   background-color: #b4c2d5;
+  border-radius: 0.25rem;
   color: #02111B;
   padding: 0.4rem;
   width: 24rem;
@@ -477,6 +537,15 @@ input {
 .input-msg-error {
   display: none;
   color: #FE5F55;
+}
+
+.d-input-check {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 1rem;
+}
+
+input:focus {
+  background-color: #BDD5EA;
 }
 
 @media (max-width: 600px) {
@@ -498,4 +567,28 @@ label {
   margin: 0.25rem;
   text-align: left;
   width: 15rem;
+}
+
+.d-label-check {
+  width: 10rem;
+}
+
+textarea {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border: 2px inset rgba(0, 0, 0, 0.678);
+  border-radius: 0.25rem;
+  background-color: #b4c2d5;
+  height: 8rem;
+  padding: 0.125rem 0.5rem;
+  width: 24rem;
+}
+
+textarea:focus {
+  background-color: #BDD5EA;
+}
+
+@media (max-width: 600px) {
+  textarea {
+    width: 16rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -57,23 +57,14 @@
                         <p id="stockError" class="input-msg-error"></p>
                     </div>
                     <div class="info-container">
-                        <label for="brand" class="form-label">Marca</label>
-                        <input type="text" class="form-control" id="brand" name="brand" maxlength="20">
-                        <p id="brandError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
                         <label for="category" class="form-label label-required">Categoría</label>
                         <input type="text" class="form-control" id="category" name="category" required>
                         <p id="categoryError" class="input-msg-error"></p>
                     </div>
                     <div class="info-container">
-                        <label for="shortDescription" class="form-label label-required">Descripción corta</label>
-                        <input type="text" class="form-control" id="shortDescription" name="shortDescription" required maxlength="120">
-                        <p id="shortDescriptionError" class="input-msg-error"></p>
-                    </div>
-                    <div class="info-container">
-                        <label for="longDescription" class="form-label">Descripción larga</label>
-                        <textarea type="text" class="form-control" id="longDescription" name="longDescription" minlength="60" maxlength="400"></textarea>
+                        <label for="brand" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="brand" name="brand" maxlength="20">
+                        <p id="brandError" class="input-msg-error"></p>
                     </div>
                     <div class="info-container">
                         <label for="ageFrom" class="form-label">Edad desde</label>
@@ -86,15 +77,24 @@
                         <p id="ageToError" class="input-msg-error"></p>
                     </div>
                     <div class="info-container">
+                        <label for="shortDescription" class="form-label label-required">Descripción corta</label>
+                        <input type="text" class="form-control" id="shortDescription" name="shortDescription" required maxlength="120">
+                        <p id="shortDescriptionError" class="input-msg-error"></p>
+                    </div>
+                    <div class="info-container-textarea">
+                        <label for="longDescription" class="form-label">Descripción larga</label>
+                        <textarea type="text" class="form-control" id="longDescription" name="longDescription" minlength="60" maxlength="400"></textarea>
+                    </div>
+                    <div class="info-container">
                         <label for="photo" class="form-label label-required">Foto</label>
                         <input type="file" class="form-control b-photo" id="photo" name="photo" required>
                         <p id="photoError" class="input-msg-error"></p>
                     </div>
-                    <div class="info-container">
-                        <label for="freeDeliver" class="form-label">Envio sin cargo</label>
-                        <input type="checkbox" class="form-checkbox" id="freeDeliver" name="freeDeliver">
+                    <div class="info-container-check">
+                        <label for="freeDeliver" class="form-label d-label-check">Envio sin cargo</label>
+                        <input type="checkbox" class="form-checkbox d-input-check" id="freeDeliver" name="freeDeliver" checked>
                     </div>
-                    <button type="submit" class="">Guardar producto</button>
+                    <button type="submit" class="b-alta">Guardar producto</button>
                 </fieldset>
             </form>
         </div>

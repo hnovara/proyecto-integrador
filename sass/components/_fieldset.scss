@@ -15,7 +15,7 @@
     padding: 2rem;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
     legend {
-        background-color: lighten($color: $success-color, $amount: 30);
+        background-color: lighten($color: $success-color, $amount: 25);
         text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.2);
         border: 0.25rem solid $success-color;
         border-radius: 0.5rem;
