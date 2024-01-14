@@ -56,6 +56,14 @@ fieldset {
         .container-4 {
             margin: 0;
         }
-    }  
+    } 
+    .fielset-img {
+        display: none;
+    } 
+    .fieldset-contacto {
+        legend {
+            width: 15rem;
+        }
+    } 
 } 
 

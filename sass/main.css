@@ -485,6 +485,12 @@ fieldset .container-4 {
   .fieldset-alta .container-4 {
     margin: 0;
   }
+  .fielset-img {
+    display: none;
+  }
+  .fieldset-contacto legend {
+    width: 15rem;
+  }
 }
 .form-control[aria-invalid=true] {
   outline: 2px solid #FE5F55;
