@@ -641,8 +641,9 @@ i {
   }
 }
 .img-nosotros {
-  border: 2px solid black;
+  border: 4px solid #577399;
   border-radius: 2rem;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.2);
   margin: 1rem 2rem 1rem 2rem;
   width: 15rem;
 }
