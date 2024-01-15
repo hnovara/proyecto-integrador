@@ -302,6 +302,14 @@ body {
 .main-container .container-2 {
   padding: 2rem;
 }
+.main-container .container-3 {
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main-container .container-4 {
+  flex-direction: column;
+  margin: 0 auto;
+}
 .main-container .nosotros-container {
   padding: 0.5rem 10%;
 }
@@ -310,7 +318,7 @@ body {
   .nosotros-container {
     padding: 0.5rem 10%;
     margin: 0 auto;
-    width: 60rem;
+    width: 45rem;
   }
 }
 @media (min-width: 620px) and (max-width: 900px) {
@@ -510,14 +518,6 @@ fieldset legend {
   text-align: center;
   width: 20rem;
 }
-fieldset .container-3 {
-  flex-direction: column;
-  margin: 0 auto;
-}
-fieldset .container-4 {
-  flex-direction: column;
-  margin: 0 auto;
-}
 
 .fieldset-alta {
   background-image: url("/img/fondo-toys2.jpg");
@@ -648,6 +648,12 @@ i {
   width: 15rem;
 }
 
+@media (max-width: 900px) {
+  .img-nosotros {
+    margin: 1rem auto;
+    width: 70%;
+  }
+}
 input {
   background-color: #b4c2d5;
   border-radius: 0.25rem;
