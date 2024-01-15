@@ -1,0 +1,33 @@
+@media (min-width: 900px) and (max-width: 5000px) {
+    .iframe-display-map1 {
+        // display: none;
+    }
+    .iframe-display-map2 {
+        display: none;
+    }
+    .iframe-display-map3 {
+        display: none;
+    }
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    .iframe-display-map1 {
+        display: none;
+    }
+    .iframe-display-map2 {
+        // display: none;
+    }
+    .iframe-display-map3 {
+        display: none;
+    }
+}
+@media (max-width: 620px) {
+    .iframe-display-map1 {
+        display: none;
+    }
+    .iframe-display-map2 {
+        display: none;
+    }
+    .iframe-display-map3 {
+        // display: none;
+    }
+}

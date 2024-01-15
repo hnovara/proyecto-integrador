@@ -33,3 +33,14 @@ $colors: (
         display: none;
     }
 }
+
+.d-flex {
+    display: flex;
+}
+.d-center {
+    text-align: center;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+} 
