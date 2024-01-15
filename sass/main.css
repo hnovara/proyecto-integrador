@@ -173,7 +173,6 @@ a {
 p {
   color: #02111B;
   font-size: 0.9rem;
-  text-align: justify;
 }
 
 * {
@@ -651,7 +650,7 @@ i {
 @media (max-width: 900px) {
   .img-nosotros {
     margin: 1rem auto;
-    width: 70%;
+    width: 60%;
   }
 }
 input {
