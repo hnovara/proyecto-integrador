@@ -478,7 +478,7 @@ body {
   margin: 0;
 }
 .card-container .card:hover {
-  box-shadow: 2px 2px 2px 2px #FE5F55;
+  box-shadow: 2px 2px 2px 2px #02111B;
 }
 
 @media (max-width: 1050px) {
