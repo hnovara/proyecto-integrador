@@ -4,6 +4,7 @@ html {
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 h1 {
     color: lighten($color: $secondary-color, $amount: 20);
